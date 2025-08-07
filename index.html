@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarPlanner</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <div class="header">
+      <h1>StarPlanner</h1>
+      <p class="subtitle">Organize your cosmic to-dos</p>
+    </div>
+    
+    <div class="task-creator glass">
+      <div class="input-group">
+        <input type="text" id="taskTitleInput" placeholder="Task name..." class="glass-input" />
+        <textarea id="taskDescInput" placeholder="Description..." class="glass-input"></textarea>
+      </div>
+      <div class="action-row">
+        <select id="taskPriority" class="glass-select">
+          <option class="select-p"  value="low">Low Priority</option>
+          <option class="select-p" value="medium" selected>Medium Priority</option>
+          <option class="select-p" value="high">High Priority</option>
+        </select>
+        <button id="addTaskBtn" class="glow-btn">Add Task</button>
+      </div>
+    </div>
+    
+    <div class="task-list-container glass">
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
